@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: keycloak
+  security:
+    oauth2:
+      resource-server:
+        jwt:
+          jwk-set-uri: http://localhost:8443/realms/test_spring_security/protocol/openid-connect/certs
+          issuer-uri: http://localhost:8443/realms/test_spring_security
+
